@@ -2,243 +2,231 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>CASHX Valentine's Contest Winners</title>
+    <title>CASHX Valentine Winners</title>
     <style>
-        :root {
-            --gold: #D4AF37;
-            --black: #050505;
-            --card-bg: #111111;
-            --text-white: #f0f0f0;
-        }
-
         body {
-            background-color: var(--black);
-            color: var(--text-white);
-            font-family: 'Trebuchet MS', sans-serif;
-            margin: 0;
-            padding: 40px 10px;
+            background-color: #000;
+            color: #fff;
+            font-family: 'Segoe UI', Arial, sans-serif;
             display: flex;
             flex-direction: column;
             align-items: center;
+            padding: 40px 20px;
         }
-
-        .container {
+        .main-container {
             width: 100%;
-            max-width: 850px;
+            max-width: 700px;
+            border: 2px solid #D4AF37;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 0 30px rgba(212, 175, 55, 0.15);
         }
-
         .header {
             text-align: center;
-            border: 2px solid var(--gold);
-            padding: 20px;
-            margin-bottom: 40px;
-            background: linear-gradient(145deg, #111, #000);
+            padding: 30px;
+            background: #0a0a0a;
+            border-bottom: 2px solid #D4AF37;
         }
-
         h1 {
-            color: var(--gold);
+            color: #D4AF37;
             margin: 0;
-            letter-spacing: 4px;
+            letter-spacing: 3px;
             text-transform: uppercase;
         }
-
-        p.subtitle {
-            margin: 10px 0 0;
-            color: #888;
-            font-size: 0.9rem;
-        }
-
-        .winners-table {
+        table {
             width: 100%;
             border-collapse: collapse;
-            background: var(--card-bg);
-            border-radius: 10px;
-            overflow: hidden;
+            background: #111;
         }
-
-        thead {
-            background-color: var(--gold);
-            color: var(--black);
-        }
-
         th {
+            background-color: #D4AF37;
+            color: #000;
             padding: 15px;
-            text-align: left;
             text-transform: uppercase;
-            font-size: 0.85rem;
+            font-size: 14px;
         }
-
         td {
             padding: 12px 15px;
             border-bottom: 1px solid #222;
+            text-align: left;
         }
-
-        tr:hover {
-            background-color: #1a1a1a;
-        }
-
-        .rank-col { width: 10%; color: var(--gold); font-weight: bold; }
-        .name-col { width: 55%; }
-        .prize-col { width: 35%; text-align: right; color: var(--gold); font-weight: bold; }
-
-        /* Specific Prize Styles */
-        .cash-prize { color: #00ff88; }
-        .data-prize { color: var(--gold); }
-        .discount-prize { color: #aaa; font-style: italic; font-size: 0.85rem; }
+        tr:nth-child(even) { background-color: #080808; }
+        .gold-bold { color: #D4AF37; font-weight: bold; }
+        .rank-cell { width: 60px; text-align: center; color: #888; }
+        .prize-cell { text-align: right; }
+        .special-highlight { background: rgba(212, 175, 55, 0.1) !important; color: #D4AF37; font-weight: bold; }
     </style>
 </head>
 <body>
 
-<div class="container">
+<div class="main-container">
     <div class="header">
-        <h1>CASHX WINNERS</h1>
-        <p class="subtitle">VALENTINE CONTEST LEADERBOARD - 500 WINNERS</p>
+        <h1>CASHX CONTEST</h1>
+        <p style="color: #888;">Valentine's Edition Winners</p>
     </div>
-
-    <table class="winners-table">
+    <table>
         <thead>
             <tr>
-                <th>Rank</th>
+                <th class="rank-cell">Rank</th>
                 <th>Participant Name</th>
-                <th style="text-align: right;">Reward</th>
+                <th class="prize-cell">Prize</th>
             </tr>
         </thead>
         <tbody>
-            <tr><td class="rank-col">1</td><td>Oluwatosin Balogun</td><td class="prize-col cash-prize">300,000 Naira</td></tr>
-            <tr><td class="rank-col">2</td><td>Chijioke Okoro</td><td class="prize-col cash-prize">200,000 Naira</td></tr>
-            <tr><td class="rank-col">3</td><td>Amina Mohammed</td><td class="prize-col cash-prize">100,000 Naira</td></tr>
+            <tr><td class="rank-cell">1</td><td>Silas Vancamp</td><td class="prize-cell gold-bold">300k</td></tr>
+            <tr><td class="rank-cell">2</td><td>Elena Kostic</td><td class="prize-cell gold-bold">200k</td></tr>
+            <tr><td class="rank-cell">3</td><td>Marcus Thorne</td><td class="prize-cell gold-bold">100k</td></tr>
 
-            <tr><td class="rank-col">4</td><td>Babatunde Raji</td><td class="prize-col data-prize">5GB Data</td></tr>
-            <tr><td class="rank-col">5</td><td>Nneka Uzoma</td><td class="prize-col data-prize">5GB Data</td></tr>
-            <tr><td class="rank-col">6</td><td>Suleiman Danjuma</td><td class="prize-col data-prize">5GB Data</td></tr>
-            <tr><td class="rank-col">7</td><td>Temitope Adenuga</td><td class="prize-col data-prize">5GB Data</td></tr>
-            <tr><td class="rank-col">8</td><td>Ifeanyi Okafor</td><td class="prize-col data-prize">5GB Data</td></tr>
-            <tr><td class="rank-col">9</td><td>Yetunde Soyinka</td><td class="prize-col data-prize">5GB Data</td></tr>
-            <tr><td class="rank-col">10</td><td>Obinna Egwu</td><td class="prize-col data-prize">5GB Data</td></tr>
-            <tr><td class="rank-col">11</td><td>Korede Bello</td><td class="prize-col data-prize">5GB Data</td></tr>
-            <tr><td class="rank-col">12</td><td>Chinwe Egbo</td><td class="prize-col data-prize">5GB Data</td></tr>
-            <tr><td class="rank-col">13</td><td>Abiodun Alabi</td><td class="prize-col data-prize">5GB Data</td></tr>
-            <tr><td class="rank-col">14</td><td>Emeka Iheme</td><td class="prize-col data-prize">5GB Data</td></tr>
-            <tr><td class="rank-col">15</td><td>Folake Ojedokun</td><td class="prize-col data-prize">5GB Data</td></tr>
-            <tr><td class="rank-col">16</td><td>Uchenna Nwosu</td><td class="prize-col data-prize">5GB Data</td></tr>
-            <tr><td class="rank-col">17</td><td>Damilola Aina</td><td class="prize-col data-prize">5GB Data</td></tr>
-            <tr><td class="rank-col">18</td><td>Zainab Abubakar</td><td class="prize-col data-prize">5GB Data</td></tr>
-            <tr><td class="rank-col">19</td><td>Segun Arinze</td><td class="prize-col data-prize">5GB Data</td></tr>
-            <tr><td class="rank-col">20</td><td>Ijeoma Akpan</td><td class="prize-col data-prize">5GB Data</td></tr>
-            <tr><td class="rank-col">21</td><td>Adesua Etomi</td><td class="prize-col data-prize">5GB Data</td></tr>
-            <tr><td class="rank-col">22</td><td>Kunle Afolayan</td><td class="prize-col data-prize">5GB Data</td></tr>
-            <tr><td class="rank-col">23</td><td>Rita Dominic</td><td class="prize-col data-prize">5GB Data</td></tr>
-            <tr><td class="rank-col">24</td><td>Bankole Wellington</td><td class="prize-col data-prize">5GB Data</td></tr>
-            <tr><td class="rank-col">25</td><td>Eniola Badmus</td><td class="prize-col data-prize">5GB Data</td></tr>
-            <tr><td class="rank-col">26</td><td>Osita Iheme</td><td class="prize-col data-prize">5GB Data</td></tr>
-            <tr><td class="rank-col">27</td><td>Toyin Abraham</td><td class="prize-col data-prize">5GB Data</td></tr>
-            <tr><td class="rank-col">28</td><td>Odunlade Adekola</td><td class="prize-col data-prize">5GB Data</td></tr>
-            <tr><td class="rank-col">29</td><td>Mercy Johnson</td><td class="prize-col data-prize">5GB Data</td></tr>
-            <tr><td class="rank-col">30</td><td>Tonto Dikeh</td><td class="prize-col data-prize">5GB Data</td></tr>
-            <tr><td class="rank-col">31</td><td>Jim Iyke</td><td class="prize-col data-prize">5GB Data</td></tr>
-            <tr><td class="rank-col">32</td><td>Genevieve Nnaji</td><td class="prize-col data-prize">5GB Data</td></tr>
-            <tr><td class="rank-col">33</td><td>Ramsey Nouah</td><td class="prize-col data-prize">5GB Data</td></tr>
-            <tr><td class="rank-col">34</td><td>Nkem Owoh</td><td class="prize-col data-prize">5GB Data</td></tr>
-            <tr><td class="rank-col">35</td><td>Patience Ozokwor</td><td class="prize-col data-prize">5GB Data</td></tr>
-            <tr><td class="rank-col">36</td><td>Pete Edochie</td><td class="prize-col data-prize">5GB Data</td></tr>
-            <tr><td class="rank-col">37</td><td>Olu Jacobs</td><td class="prize-col data-prize">5GB Data</td></tr>
-            <tr><td class="rank-col">38</td><td>Joke Silva</td><td class="prize-col data-prize">5GB Data</td></tr>
-            <tr><td class="rank-col">39</td><td>Richard Mofe-Damijo</td><td class="prize-col data-prize">5GB Data</td></tr>
-            <tr><td class="rank-col">40</td><td>Omotola Jalade</td><td class="prize-col data-prize">5GB Data</td></tr>
-            <tr><td class="rank-col">41</td><td>Iniobong Edo</td><td class="prize-col data-prize">5GB Data</td></tr>
-            <tr><td class="rank-col">42</td><td>Kemi Adetiba</td><td class="prize-col data-prize">5GB Data</td></tr>
-            <tr><td class="rank-col">43</td><td>Funke Akindele</td><td class="prize-col data-prize">5GB Data</td></tr>
-            <tr><td class="rank-col">44</td><td>Yul Edochie</td><td class="prize-col data-prize">5GB Data</td></tr>
-            <tr><td class="rank-col">45</td><td>Zubby Michael</td><td class="prize-col data-prize">5GB Data</td></tr>
-            <tr><td class="rank-col">46</td><td>Destiny Etiko</td><td class="prize-col data-prize">5GB Data</td></tr>
-            <tr><td class="rank-col">47</td><td>Ruth Kadiri</td><td class="prize-col data-prize">5GB Data</td></tr>
-            <tr><td class="rank-col">48</td><td>Ken Erics</td><td class="prize-col data-prize">5GB Data</td></tr>
-            <tr><td class="rank-col">49</td><td>Alexx Ekubo</td><td class="prize-col data-prize">5GB Data</td></tr>
-            <tr><td class="rank-col">50</td><td>Ik Ogbonna</td><td class="prize-col data-prize">5GB Data</td></tr>
-            <tr><td class="rank-col">51</td><td>Ufuoma McDermott</td><td class="prize-col data-prize">5GB Data</td></tr>
-            <tr><td class="rank-col">52</td><td>Omoni Oboli</td><td class="prize-col data-prize">5GB Data</td></tr>
-            <tr><td class="rank-col">53</td><td>Chika Ike</td><td class="prize-col data-prize">5GB Data</td></tr>
-            <tr><td class="rank-col">54</td><td>Ebuka Obi-Uchendu</td><td class="prize-col data-prize">5GB Data</td></tr>
-            <tr><td class="rank-col">55</td><td>Nancy Isime</td><td class="prize-col data-prize">5GB Data</td></tr>
-            <tr><td class="rank-col">56</td><td>Adesua Utomi</td><td class="prize-col data-prize">5GB Data</td></tr>
-            <tr><td class="rank-col">57</td><td>Falz TheBahdGuy</td><td class="prize-col data-prize">5GB Data</td></tr>
-            <tr><td class="rank-col">58</td><td>Mr Ibu</td><td class="prize-col data-prize">5GB Data</td></tr>
-            <tr><td class="rank-col">59</td><td>Pawpaw Chinedu</td><td class="prize-col data-prize">5GB Data</td></tr>
-            <tr><td class="rank-col">60</td><td>Sola Sobowale</td><td class="prize-col data-prize">5GB Data</td></tr>
-            <tr><td class="rank-col">61</td><td>Mo Abudu</td><td class="prize-col data-prize">5GB Data</td></tr>
-            <tr><td class="rank-col">62</td><td>Don Jazzy</td><td class="prize-col data-prize">5GB Data</td></tr>
-            <tr><td class="rank-col">63</td><td>Wizkid Balogun</td><td class="prize-col data-prize">5GB Data</td></tr>
-            <tr><td class="rank-col">64</td><td>Davido Adeleke</td><td class="prize-col data-prize">5GB Data</td></tr>
-            <tr><td class="rank-col">65</td><td>Burna Boy</td><td class="prize-col data-prize">5GB Data</td></tr>
-            <tr><td class="rank-col">66</td><td>Tiwa Savage</td><td class="prize-col data-prize">5GB Data</td></tr>
-            <tr><td class="rank-col">67</td><td>Olamide Adedeji</td><td class="prize-col data-prize">5GB Data</td></tr>
-            <tr><td class="rank-col">68</td><td>Phyno Azodo</td><td class="prize-col data-prize">5GB Data</td></tr>
-            <tr><td class="rank-col">69</td><td>Flavour Nabania</td><td class="prize-col data-prize">5GB Data</td></tr>
-            <tr><td class="rank-col">70</td><td>Yemi Alade</td><td class="prize-col data-prize">5GB Data</td></tr>
-            <tr><td class="rank-col">71</td><td>Simi Kosoko</td><td class="prize-col data-prize">5GB Data</td></tr>
-            <tr><td class="rank-col">72</td><td>Adekunle Gold</td><td class="prize-col data-prize">5GB Data</td></tr>
-            <tr><td class="rank-col">73</td><td>Teni Apata</td><td class="prize-col data-prize">5GB Data</td></tr>
-            <tr><td class="rank-col">74</td><td>Zlatan Ibile</td><td class="prize-col data-prize">5GB Data</td></tr>
-            <tr><td class="rank-col">75</td><td>Naira Marley</td><td class="prize-col data-prize">5GB Data</td></tr>
-            <tr><td class="rank-col">76</td><td>Mayorkun Adewale</td><td class="prize-col data-prize">5GB Data</td></tr>
-            <tr><td class="rank-col">77</td><td>Rema Ikubor</td><td class="prize-col data-prize">5GB Data</td></tr>
-            <tr><td class="rank-col">78</td><td>Fireboy DML</td><td class="prize-col data-prize">5GB Data</td></tr>
-            <tr><td class="rank-col">79</td><td>Joeboy Akinfenwa</td><td class="prize-col data-prize">5GB Data</td></tr>
-            <tr><td class="rank-col">80</td><td>Ayra Starr</td><td class="prize-col data-prize">5GB Data</td></tr>
-            <tr><td class="rank-col">81</td><td>Tems Openiyi</td><td class="prize-col data-prize">5GB Data</td></tr>
-            <tr><td class="rank-col">82</td><td>Blaqbonez Emeka</td><td class="prize-col data-prize">5GB Data</td></tr>
-            <tr><td class="rank-col">83</td><td>Ckay Ekweani</td><td class="prize-col data-prize">5GB Data</td></tr>
-            <tr><td class="rank-col">84</td><td>Omah Lay</td><td class="prize-col data-prize">5GB Data</td></tr>
-            <tr><td class="rank-col">85</td><td>Kizz Daniel</td><td class="prize-col data-prize">5GB Data</td></tr>
-            <tr><td class="rank-col">86</td><td>Patoranking Okorie</td><td class="prize-col data-prize">5GB Data</td></tr>
-            <tr><td class="rank-col">87</td><td>Timaya Odom</td><td class="prize-col data-prize">5GB Data</td></tr>
-            <tr><td class="rank-col">88</td><td>Duncan Mighty</td><td class="prize-col data-prize">5GB Data</td></tr>
-            <tr><td class="rank-col">89</td><td>Phyno Nelson</td><td class="prize-col data-prize">5GB Data</td></tr>
-            <tr><td class="rank-col">90</td><td>Reminisce Safin</td><td class="prize-col data-prize">5GB Data</td></tr>
-            <tr><td class="rank-col">91</td><td>Ice Prince</td><td class="prize-col data-prize">5GB Data</td></tr>
-            <tr><td class="rank-col">92</td><td>M.I Abaga</td><td class="prize-col data-prize">5GB Data</td></tr>
-            <tr><td class="rank-col">93</td><td>Naeto C</td><td class="prize-col data-prize">5GB Data</td></tr>
-            <tr><td class="rank-col">94</td><td>Dbanj Oyebanjo</td><td class="prize-col data-prize">5GB Data</td></tr>
-            <tr><td class="rank-col">95</td><td>Wande Coal</td><td class="prize-col data-prize">5GB Data</td></tr>
-            <tr><td class="rank-col">96</td><td>Iyanya Onoyom</td><td class="prize-col data-prize">5GB Data</td></tr>
-            <tr><td class="rank-col">97</td><td>Kcee Okonkwo</td><td class="prize-col data-prize">5GB Data</td></tr>
-            <tr><td class="rank-col">98</td><td>Tekno Miles</td><td class="prize-col data-prize">5GB Data</td></tr>
-            <tr><td class="rank-col">99</td><td>Skales Raoul</td><td class="prize-col data-prize">5GB Data</td></tr>
-            <tr><td class="rank-col">100</td><td>Reekado Banks</td><td class="prize-col data-prize">5GB Data</td></tr>
+            <tr><td class="rank-cell">4</td><td>Lila Rossi</td><td class="prize-cell gold-bold">5GB Data</td></tr>
+            <tr><td class="rank-cell">5</td><td>Jaxon Reed</td><td class="prize-cell gold-bold">5GB Data</td></tr>
+            <tr><td class="rank-cell">6</td><td>Amara Finch</td><td class="prize-cell gold-bold">5GB Data</td></tr>
+            <tr><td class="rank-cell">7</td><td>Tobias Kent</td><td class="prize-cell gold-bold">5GB Data</td></tr>
+            <tr><td class="rank-cell">8</td><td>Nina Vance</td><td class="prize-cell gold-bold">5GB Data</td></tr>
+            <tr><td class="rank-cell">9</td><td>Arlo Gable</td><td class="prize-cell gold-bold">5GB Data</td></tr>
+            <tr><td class="rank-cell">10</td><td>Mira Solis</td><td class="prize-cell gold-bold">5GB Data</td></tr>
+            <tr><td class="rank-cell">11</td><td>Bastian Cole</td><td class="prize-cell gold-bold">5GB Data</td></tr>
+            <tr><td class="rank-cell">12</td><td>Sasha Moon</td><td class="prize-cell gold-bold">5GB Data</td></tr>
+            <tr><td class="rank-cell">13</td><td>Dorian Gray</td><td class="prize-cell gold-bold">5GB Data</td></tr>
+            <tr><td class="rank-cell">14</td><td>Vera Quinn</td><td class="prize-cell gold-bold">5GB Data</td></tr>
+            <tr><td class="rank-cell">15</td><td>Ezra Loft</td><td class="prize-cell gold-bold">5GB Data</td></tr>
+            <tr><td class="rank-cell">16</td><td>Clara Vale</td><td class="prize-cell gold-bold">5GB Data</td></tr>
+            <tr><td class="rank-cell">17</td><td>Hugo Frost</td><td class="prize-cell gold-bold">5GB Data</td></tr>
+            <tr><td class="rank-cell">18</td><td>Talia Hart</td><td class="prize-cell gold-bold">5GB Data</td></tr>
+            <tr><td class="rank-cell">19</td><td>Ivan Petrov</td><td class="prize-cell gold-bold">5GB Data</td></tr>
+            <tr><td class="rank-cell">20</td><td>Jade Rivers</td><td class="prize-cell gold-bold">5GB Data</td></tr>
+            <tr><td class="rank-cell">21</td><td>Leon Stark</td><td class="prize-cell gold-bold">5GB Data</td></tr>
+            <tr><td class="rank-cell">22</td><td>Maya Brooks</td><td class="prize-cell gold-bold">5GB Data</td></tr>
+            <tr><td class="rank-cell">23</td><td>Felix Zane</td><td class="prize-cell gold-bold">5GB Data</td></tr>
+            <tr><td class="rank-cell">24</td><td>Ruby Lane</td><td class="prize-cell gold-bold">5GB Data</td></tr>
+            <tr><td class="rank-cell">25</td><td>Oscar Wilde</td><td class="prize-cell gold-bold">5GB Data</td></tr>
+            <tr><td class="rank-cell">26</td><td>Sienna West</td><td class="prize-cell gold-bold">5GB Data</td></tr>
+            <tr><td class="rank-cell">27</td><td>Xavier Cruz</td><td class="prize-cell gold-bold">5GB Data</td></tr>
+            <tr><td class="rank-cell">28</td><td>Chloe Bell</td><td class="prize-cell gold-bold">5GB Data</td></tr>
+            <tr><td class="rank-cell">29</td><td>Arthur Pend</td><td class="prize-cell gold-bold">5GB Data</td></tr>
+            <tr><td class="rank-cell">30</td><td>Zara Khan</td><td class="prize-cell gold-bold">5GB Data</td></tr>
+            <tr><td class="rank-cell">31</td><td>Victor Hugo</td><td class="prize-cell gold-bold">5GB Data</td></tr>
+            <tr><td class="rank-cell">32</td><td>Iris Bloom</td><td class="prize-cell gold-bold">5GB Data</td></tr>
+            <tr><td class="rank-cell">33</td><td>Kael Voss</td><td class="prize-cell gold-bold">5GB Data</td></tr>
+            <tr><td class="rank-cell">34</td><td>Nora Jems</td><td class="prize-cell gold-bold">5GB Data</td></tr>
+            <tr><td class="rank-cell">35</td><td>Finnian O'Shea</td><td class="prize-cell gold-bold">5GB Data</td></tr>
+            <tr><td class="rank-cell">36</td><td>Zelda Fitzgerald</td><td class="prize-cell gold-bold">5GB Data</td></tr>
+            <tr><td class="rank-cell">37</td><td>Roman Pierce</td><td class="prize-cell gold-bold">5GB Data</td></tr>
+            <tr><td class="rank-cell">38</td><td>Thea Moore</td><td class="prize-cell gold-bold">5GB Data</td></tr>
+            <tr><td class="rank-cell">39</td><td>Silas Marner</td><td class="prize-cell gold-bold">5GB Data</td></tr>
+            <tr><td class="rank-cell">40</td><td>Luna Love</td><td class="prize-cell gold-bold">5GB Data</td></tr>
+            <tr><td class="rank-cell">41</td><td>Jasper Stone</td><td class="prize-cell gold-bold">5GB Data</td></tr>
+            <tr><td class="rank-cell">42</td><td>Heidi Klum</td><td class="prize-cell gold-bold">5GB Data</td></tr>
+            <tr><td class="rank-cell">43</td><td>Milo Vent</td><td class="prize-cell gold-bold">5GB Data</td></tr>
+            <tr><td class="rank-cell">44</td><td>Piper Hall</td><td class="prize-cell gold-bold">5GB Data</td></tr>
+            <tr><td class="rank-cell">45</td><td>Gideon Ray</td><td class="prize-cell gold-bold">5GB Data</td></tr>
+            <tr><td class="rank-cell">46</td><td>Saffron Burr</td><td class="prize-cell gold-bold">5GB Data</td></tr>
+            <tr><td class="rank-cell">47</td><td>Atlas Page</td><td class="prize-cell gold-bold">5GB Data</td></tr>
+            <tr><td class="rank-cell">48</td><td>Freya Nord</td><td class="prize-cell gold-bold">5GB Data</td></tr>
+            <tr><td class="rank-cell">49</td><td>Cyrus Field</td><td class="prize-cell gold-bold">5GB Data</td></tr>
+            <tr><td class="rank-cell">50</td><td>Lyra Bel</td><td class="prize-cell gold-bold">5GB Data</td></tr>
+            <tr><td class="rank-cell">51</td><td>Caleb Dray</td><td class="prize-cell gold-bold">5GB Data</td></tr>
+            <tr><td class="rank-cell">52</td><td>Ember Wick</td><td class="prize-cell gold-bold">5GB Data</td></tr>
+            <tr><td class="rank-cell">53</td><td>Jonas Blue</td><td class="prize-cell gold-bold">5GB Data</td></tr>
+            <tr><td class="rank-cell">54</td><td>Sloane Drue</td><td class="prize-cell gold-bold">5GB Data</td></tr>
+            <tr><td class="rank-cell">55</td><td>Keanu Webb</td><td class="prize-cell gold-bold">5GB Data</td></tr>
+            <tr><td class="rank-cell">56</td><td>Daisy Miller</td><td class="prize-cell gold-bold">5GB Data</td></tr>
+            <tr><td class="rank-cell">57</td><td>Axel Rod</td><td class="prize-cell gold-bold">5GB Data</td></tr>
+            <tr><td class="rank-cell">58</td><td>Willow Grey</td><td class="prize-cell gold-bold">5GB Data</td></tr>
+            <tr><td class="rank-cell">59</td><td>Rocco Siff</td><td class="prize-cell gold-bold">5GB Data</td></tr>
+            <tr><td class="rank-cell">60</td><td>Nadia Glee</td><td class="prize-cell gold-bold">5GB Data</td></tr>
+            <tr><td class="rank-cell">61</td><td>Xander Cage</td><td class="prize-cell gold-bold">5GB Data</td></tr>
+            <tr><td class="rank-cell">62</td><td>Odessa Young</td><td class="prize-cell gold-bold">5GB Data</td></tr>
+            <tr><td class="rank-cell">63</td><td>Quinton Dash</td><td class="prize-cell gold-bold">5GB Data</td></tr>
+            <tr><td class="rank-cell">64</td><td>Macy Gray</td><td class="prize-cell gold-bold">5GB Data</td></tr>
+            <tr><td class="rank-cell">65</td><td>Zion Wright</td><td class="prize-cell gold-bold">5GB Data</td></tr>
+            <tr><td class="rank-cell">66</td><td>Bria Ford</td><td class="prize-cell gold-bold">5GB Data</td></tr>
+            <tr><td class="rank-cell">67</td><td>Titus Bram</td><td class="prize-cell gold-bold">5GB Data</td></tr>
+            <tr><td class="rank-cell">68</td><td>Rhea Pearl</td><td class="prize-cell gold-bold">5GB Data</td></tr>
+            <tr><td class="rank-cell">69</td><td>Dante Alig</td><td class="prize-cell gold-bold">5GB Data</td></tr>
+            <tr><td class="rank-cell">70</td><td>Lana Del</td><td class="prize-cell gold-bold">5GB Data</td></tr>
+            <tr><td class="rank-cell">71</td><td>Ewan Greg</td><td class="prize-cell gold-bold">5GB Data</td></tr>
+            <tr><td class="rank-cell">72</td><td>Portia White</td><td class="prize-cell gold-bold">5GB Data</td></tr>
+            <tr><td class="rank-cell">73</td><td>Harlan Wade</td><td class="prize-cell gold-bold">5GB Data</td></tr>
+            <tr><td class="rank-cell">74</td><td>Esme Rose</td><td class="prize-cell gold-bold">5GB Data</td></tr>
+            <tr><td class="rank-cell">75</td><td>Casper Ghost</td><td class="prize-cell gold-bold">5GB Data</td></tr>
+            <tr><td class="rank-cell">76</td><td>Inaya Noor</td><td class="prize-cell gold-bold">5GB Data</td></tr>
+            <tr><td class="rank-cell">77</td><td>Bowie Star</td><td class="prize-cell gold-bold">5GB Data</td></tr>
+            <tr><td class="rank-cell">78</td><td>Sutton Hoo</td><td class="prize-cell gold-bold">5GB Data</td></tr>
+            <tr><td class="rank-cell">79</td><td>Drake More</td><td class="prize-cell gold-bold">5GB Data</td></tr>
+            <tr><td class="rank-cell">80</td><td>Alba June</td><td class="prize-cell gold-bold">5GB Data</td></tr>
+            <tr><td class="rank-cell">81</td><td>Orion Belt</td><td class="prize-cell gold-bold">5GB Data</td></tr>
+            <tr><td class="rank-cell">82</td><td>Faye Dun</td><td class="prize-cell gold-bold">5GB Data</td></tr>
+            <tr><td class="rank-cell">83</td><td>Soren Kierk</td><td class="prize-cell gold-bold">5GB Data</td></tr>
+            <tr><td class="rank-cell">84</td><td>Hattie Jacques</td><td class="prize-cell gold-bold">5GB Data</td></tr>
+            <tr><td class="rank-cell">85</td><td>Leif Eric</td><td class="prize-cell gold-bold">5GB Data</td></tr>
+            <tr><td class="rank-cell">86</td><td>Odette Swan</td><td class="prize-cell gold-bold">5GB Data</td></tr>
+            <tr><td class="rank-cell">87</td><td>Thatcher Roe</td><td class="prize-cell gold-bold">5GB Data</td></tr>
+            <tr><td class="rank-cell">88</td><td>Callista Moon</td><td class="prize-cell gold-bold">5GB Data</td></tr>
+            <tr><td class="rank-cell">89</td><td>Keating Crow</td><td class="prize-cell gold-bold">5GB Data</td></tr>
+            <tr><td class="rank-cell">90</td><td>Astrid Lind</td><td class="prize-cell gold-bold">5GB Data</td></tr>
+            <tr><td class="rank-cell">91</td><td>Viggo Mort</td><td class="prize-cell gold-bold">5GB Data</td></tr>
+            <tr><td class="rank-cell">92</td><td>Elsa Snow</td><td class="prize-cell gold-bold">5GB Data</td></tr>
+            <tr><td class="rank-cell">93</td><td>Pascal Blaise</td><td class="prize-cell gold-bold">5GB Data</td></tr>
+            <tr><td class="rank-cell">94</td><td>Noemi Lux</td><td class="prize-cell gold-bold">5GB Data</td></tr>
+            <tr><td class="rank-cell">95</td><td>Gulliver Trav</td><td class="prize-cell gold-bold">5GB Data</td></tr>
+            <tr><td class="rank-cell">96</td><td>Beatrix Potter</td><td class="prize-cell gold-bold">5GB Data</td></tr>
+            <tr><td class="rank-cell">97</td><td>Darwin Charles</td><td class="prize-cell gold-bold">5GB Data</td></tr>
+            <tr><td class="rank-cell">98</td><td>Mavis Beacon</td><td class="prize-cell gold-bold">5GB Data</td></tr>
+            <tr><td class="rank-cell">99</td><td>Luther King</td><td class="prize-cell gold-bold">5GB Data</td></tr>
+            <tr><td class="rank-cell">100</td><td>Florence Night</td><td class="prize-cell gold-bold">5GB Data</td></tr>
 
-            <tr><td class="rank-col">101</td><td>Bolaji Thompson</td><td class="prize-col discount-prize">500 Naira Discount</td></tr>
-            <tr><td class="rank-col">102</td><td>Uche Jumbo</td><td class="prize-col discount-prize">500 Naira Discount</td></tr>
-            <tr><td class="rank-col">103</td><td>Patience Egbo</td><td class="prize-col discount-prize">500 Naira Discount</td></tr>
-            <tr><td class="rank-col">104</td><td>Sade Adu</td><td class="prize-col discount-prize">500 Naira Discount</td></tr>
-            <tr><td class="rank-col">105</td><td>Femi Kuti</td><td class="prize-col discount-prize">500 Naira Discount</td></tr>
-            <tr><td class="rank-col">106</td><td>Seun Kuti</td><td class="prize-col discount-prize">500 Naira Discount</td></tr>
-            <tr><td class="rank-col">107</td><td>Lagbaja Ologun</td><td class="prize-col discount-prize">500 Naira Discount</td></tr>
-            <tr><td class="rank-col">108</td><td>Asa Elemide</td><td class="prize-col discount-prize">500 Naira Discount</td></tr>
-            <tr><td class="rank-col">109</td><td>Nneka Lucia</td><td class="prize-col discount-prize">500 Naira Discount</td></tr>
-            <tr><td class="rank-col">110</td><td>Bez Idakula</td><td class="prize-col discount-prize">500 Naira Discount</td></tr>
-            <tr><td class="rank-col">111</td><td>Praiz Adejo</td><td class="prize-col discount-prize">500 Naira Discount</td></tr>
-            <tr><td class="rank-col">112</td><td>Chidinma Ekile</td><td class="prize-col discount-prize">500 Naira Discount</td></tr>
-            <tr><td class="rank-col">113</td><td>Illbliss Tobechukwu</td><td class="prize-col discount-prize">500 Naira Discount</td></tr>
-            <tr><td class="rank-col">114</td><td>Vector Tha Viper</td><td class="prize-col discount-prize">500 Naira Discount</td></tr>
-            <tr><td class="rank-col">115</td><td>Jesse Jagz</td><td class="prize-col discount-prize">500 Naira Discount</td></tr>
-            <tr><td class="rank-col">116</td><td>Brymo Olawale</td><td class="prize-col discount-prize">500 Naira Discount</td></tr>
-            <tr><td class="rank-col">117</td><td>Ric Hassani</td><td class="prize-col discount-prize">500 Naira Discount</td></tr>
-            <tr><td class="rank-col">118</td><td>Johnny Drille</td><td class="prize-col discount-prize">500 Naira Discount</td></tr>
-            <tr><td class="rank-col">119</td><td>Korede Sanusi</td><td class="prize-col discount-prize">500 Naira Discount</td></tr>
+            <tr><td class="rank-cell">101</td><td>Riley Cooper</td><td class="prize-cell">500 Discount</td></tr>
+            <tr><td class="rank-cell">102</td><td>Emery Lane</td><td class="prize-cell">500 Discount</td></tr>
+            <tr><td class="rank-cell">103</td><td>Peyton Saw</td><td class="prize-cell">500 Discount</td></tr>
+            <tr><td class="rank-cell">104</td><td>Sawyer Finn</td><td class="prize-cell">500 Discount</td></tr>
+            <tr><td class="rank-cell">105</td><td>Parker Posey</td><td class="prize-cell">500 Discount</td></tr>
+            <tr><td class="rank-cell">106</td><td>Hayden Pan</td><td class="prize-cell">500 Discount</td></tr>
+            <tr><td class="rank-cell">107</td><td>Quinn Fab</td><td class="prize-cell">500 Discount</td></tr>
+            <tr><td class="rank-cell">108</td><td>Morgan Free</td><td class="prize-cell">500 Discount</td></tr>
+            <tr><td class="rank-cell">109</td><td>Jordan River</td><td class="prize-cell">500 Discount</td></tr>
+            <tr><td class="rank-cell">110</td><td>Taylor Swiftly</td><td class="prize-cell">500 Discount</td></tr>
+            <tr><td class="rank-cell">111</td><td>Skyler White</td><td class="prize-cell">500 Discount</td></tr>
+            <tr><td class="rank-cell">112</td><td>Charlie Brown</td><td class="prize-cell">500 Discount</td></tr>
+            <tr><td class="rank-cell">113</td><td>Alex Mercer</td><td class="prize-cell">500 Discount</td></tr>
+            <tr><td class="rank-cell">114</td><td>Sam Fisher</td><td class="prize-cell">500 Discount</td></tr>
+            <tr><td class="rank-cell">115</td><td>Jesse Pink</td><td class="prize-cell">500 Discount</td></tr>
+            <tr><td class="rank-cell">116</td><td>Walter High</td><td class="prize-cell">500 Discount</td></tr>
+            <tr><td class="rank-cell">117</td><td>Saul Good</td><td class="prize-cell">500 Discount</td></tr>
+            <tr><td class="rank-cell">118</td><td>Kim Wex</td><td class="prize-cell">500 Discount</td></tr>
+            <tr><td class="rank-cell">119</td><td>Mike Erhman</td><td class="prize-cell">500 Discount</td></tr>
 
-            <tr><td class="rank-col">120</td><td>Oma</td><td class="prize-col discount-prize">500 Naira Discount</td></tr>
-            <tr><td class="rank-col">121</td><td>Victolee</td><td class="prize-col discount-prize">500 Naira Discount</td></tr>
-            <tr><td class="rank-col">122</td><td>Baby dera</td><td class="prize-col discount-prize">500 Naira Discount</td></tr>
+            <tr class="special-highlight"><td class="rank-cell">120</td><td>Oma</td><td class="prize-cell">500 Discount</td></tr>
+            <tr class="special-highlight"><td class="rank-cell">121</td><td>Victolee</td><td class="prize-cell">500 Discount</td></tr>
+            <tr class="special-highlight"><td class="rank-cell">122</td><td>Baby dera</td><td class="prize-cell">500 Discount</td></tr>
 
-            <tr><td class="rank-col">123</td><td>Ifeoluwa Adeyemi</td><td class="prize-col discount-prize">500 Naira Discount</td></tr>
-            <tr><td class="rank-col">124</td><td>Ekenemchukwu Obi</td><td class="prize-col discount-prize">500 Naira Discount</td></tr>
-            <tr><td class="rank-col">125</td><td>Bashir Umar</td><td class="prize-col discount-prize">500 Naira Discount</td></tr>
-            <tr><td class="rank-col">126</td><td>Morenikeji Williams</td><td class="prize-col discount-prize">500 Naira Discount</td></tr>
-            <tr><td class="rank-col">127</td><td>Chukwuebuka Anyanwu</td><td class="prize-col discount-prize">500 Naira Discount</td></tr>
-            <tr><td class="rank-col">128</td><td>Oloruntoba Isaac</td><td class="prize-col discount-prize">500 Naira Discount</td></tr>
-            <tr><td class="rank-col">129</td><td>Ejiroghene Oghene</td><td class="prize-col discount-prize">500 Naira Discount</td></tr>
-            <tr><td class="rank-col">130</td><td>Adewale Thompson</td><td class="prize-col discount-prize">500 Naira Discount</td></tr>
-            
+            <tr><td class="rank-cell">123</td><td>Logan Paulson</td><td class="prize-cell">500 Discount</td></tr>
+            <tr><td class="rank-cell">124</td><td>Casey Jones</td><td class="prize-cell">500 Discount</td></tr>
+            <tr><td class="rank-cell">125</td><td>Terry Crews</td><td class="prize-cell">500 Discount</td></tr>
+            <tr><td class="rank-cell">126</td><td>Benny Hill</td><td class="prize-cell">500 Discount</td></tr>
+            <tr><td class="rank-cell">127</td><td>Misty Day</td><td class="prize-cell">500 Discount</td></tr>
+            <tr><td class="rank-cell">128</td><td>Steve Rogers</td><td class="prize-cell">500 Discount</td></tr>
+            <tr><td class="rank-cell">129</td><td>Natasha Rom</td><td class="prize-cell">500 Discount</td></tr>
+            <tr><td class="rank-cell">130</td><td>Bruce Bann</td><td class="prize-cell">500 Discount</td></tr>
+            <tr><td class="rank-cell">131</td><td>Tony Starkly</td><td class="prize-cell">500 Discount</td></tr>
+            <tr><td class="rank-cell">132</td><td>Wanda Max</td><td class="prize-cell">500 Discount</td></tr>
+            <tr><td class="rank-cell">133</td><td>Vision Mind</td><td class="prize-cell">500 Discount</td></tr>
+            <tr><td class="rank-cell">134</td><td>Pietro Speed</td><td class="prize-cell">500 Discount</td></tr>
+            <tr><td class="rank-cell">135</td><td>Clint Hawk</td><td class="prize-cell">500 Discount</td></tr>
+            <tr><td class="rank-cell">136</td><td>Scott Lang</td><td class="prize-cell">500 Discount</td></tr>
+            <tr><td class="rank-cell">137</td><td>Hope Van</td><td class="prize-cell">500 Discount</td></tr>
+            <tr><td class="rank-cell">138</td><td>Carol Dan</td><td class="prize-cell">500 Discount</td></tr>
+            <tr><td class="rank-cell">139</td><td>Nick Fury</td><td class="prize-cell">500 Discount</td></tr>
+            <tr><td class="rank-cell">140</td><td>Maria Hill</td><td class="prize-cell">500 Discount</td></tr>
+            <tr><td class="rank-cell">141</td><td>Phil Coul</td><td class="prize-cell">500 Discount</td></tr>
+            <tr><td class="rank-cell">142</td><td>Daisy John</td><td class="prize-cell">500 Discount</td></tr>
+            <tr><td class="rank-cell">143</td><td>Melinda May</td><td class="prize-cell">500 Discount</td></tr>
+            <tr><td class="rank-cell">144</td><td>Grant Ward</td><td class="prize-cell">500 Discount</td></tr>
+            <tr><td class="rank-cell">145</td><td>Leo Fitz</td><td class="prize-cell">500 Discount</td></tr>
+            <tr><td class="rank-cell">146</td><td>Jemma Sim</td><td class="prize-cell">500 Discount</td></tr>
+            <tr><td class="rank-cell">147</td><td>Bobbi Morse</td><td class="prize-cell">500 Discount</td></tr>
+            <tr><td class="rank-cell">148</td><td>Lance Hunt</td><td class="prize-cell">500 Discount</td></tr>
+            <tr><td class="rank-cell">149</td><td>Mack Mack</td><td class="prize-cell">500 Discount</td></tr>
+            <tr><td class="rank-cell">150</td><td>Elena Rod</td><td class="prize-cell">500 Discount</td></tr>
         </tbody>
     </table>
 </div>
